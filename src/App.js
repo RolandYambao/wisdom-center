@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import './App.css';
+import './App.css';
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,9 +10,9 @@ import {
 // Components
 import Homepage from "./components/Homepage";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Store from "./components/Store";
 import Quotes from "./components/Quotes";
+import Store from "./components/Store";
+import Contact from "./components/Contact";
 
 class App extends Component {
   render() {
@@ -22,9 +22,9 @@ class App extends Component {
           <Routes>
             <Route exact path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/store" element={<Store />} />
             <Route path="/quotes" element={<Quotes />} />
+            <Route path="/store" element={<Store />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </Router>
