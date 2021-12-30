@@ -5,18 +5,18 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-                <section class="hero is-info">
-                    <div class="hero-body">
-                        <div class="container">
-                            <h1 class="title">
+                <section className="hero is-info">
+                    <div className="hero-body">
+                        <div className="container">
+                            <h1 className="title">
                                 Wisdom Center
                             </h1>
-                            <h2 class="subtitle">
+                            <h2 className="subtitle">
                                 The Place to Find Higher Knowledge
                             </h2>
                         </div>
                     </div>
-                    <div class="tabs is-boxed is-centered main-menu" id="nav">
+                    <div className="tabs is-boxed is-centered main-menu" id="nav">
                         <ul>
                             <li data-target="pane-1" id="1">
                                 <a href="/about">
@@ -40,9 +40,9 @@ class Homepage extends Component {
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-content">
-                        <div class="tab-pane is-active" id="pane-2">
-                            <div class="content">
+                    <div className="tab-content">
+                        <div className="tab-pane is-active" id="pane-2">
+                            <div className="content">
                                 <h1>Knowledge from All Ages</h1>
                                 <p>Here in the Wisdom Center, you will find the necessary knowledge in simple quotes that will satiate your curiosity of existence, in the center you will find:</p>
                                 <ul>
