@@ -8,9 +8,8 @@ class About extends Component {
                 <section class="hero is-medium">
                     <div class="hero-body">
                         <div class="container">
-                            <h1 class="title is-1 ">Hello Parallax</h1>
-                            <h2 class="subtitle">A simple boilerplate for setting up parallax <br /> using the Bulma Hero container.</h2>
-                            <a href="#" class="button is-white is-medium is-inverted">Learn More&ensp;<i class="fad fa-chevron-right"></i></a>
+                            <h1 class="title is-1 ">About the Wisdom Center</h1>
+                            <h2 class="subtitle">The Center Brings Truth and Understanding to All</h2>
                         </div>
                     </div>
                 </section>
@@ -19,7 +18,7 @@ class About extends Component {
                         <div class="container">
                             <div class="columns">
                                 <div class="column is-6 is-offset-6">
-                                    <h1 class="title is-1 ">Lorem Ipsum</h1>
+                                    <h1 class="title is-1 ">Mission and Vision</h1>
                                     <hr class="content-divider" />
                                     <h2 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit explicabo amet magni illum eum voluptate! Eveniet voluptatem nam magnam necessitatibus.</h2>
                                     <a href="#" class="button is-white is-inverted">Next&ensp;<i class="fad fa-chevron-right"></i></a>
