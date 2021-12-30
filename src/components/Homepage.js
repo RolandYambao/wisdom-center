@@ -5,510 +5,217 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-                {/* <!-- Begin Preloader --> */}
-                <div class="preloader-wrapper">
-                    <div class="preloader">
-                        <img src="img/preloader.gif" alt="" />
+                <nav class="navbar is-info">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="#">
+                            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28" />
+                        </a>
+                        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                {/* <!-- End Preloader--> */}
-                {/* <!-- Begin Scroll Up Button --> */}
-
-                <form action="#home">
-                    <button id="toTop" title="Go to top">
-                        <i class="fas fa-angle-up"></i>
-                    </button>
-                </form>
-                {/* <!-- End Scroll Up Button --> */}
-
-                {/* <!-- Begin Header --> */}
-                <div class="header-wrapper" id="home">
-                    {/* <!-- Begin Hero --> */}
-                    <section class="hero is-large">
-                        {/* <!-- Begin Mobile Nav --> */}
-                        <nav class="navbar is-transparent is-hidden-desktop">
-                            {/* <!-- Begin Burger Menu --> */}
-                            <div class="navbar-brand">
-                                <div class="navbar-burger burger" data-target="mobile-nav">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-                            {/* <!-- End Burger Menu --> */}
-                            <div id="mobile-nav" class="navbar-menu">
-                                <div class="navbar-end">
-                                    <div class="navbar-item">
-                                        <a class="navbar-item" href="#home">
-                                            Home
-                                        </a>
-                                    </div>
-                                    <div class="navbar-item">
-                                        <a class="navbar-item" href="#about-me">
-                                            About Me
-                                        </a>
-                                    </div>
-                                    <div class="navbar-item">
-                                        <a class="navbar-item" href="#services">
-                                            Services
-                                        </a>
-                                    </div>
-                                    <div class="navbar-item">
-                                        <a class="navbar-item" href="#skills">
-                                            Skills
-                                        </a>
-                                    </div>
-                                    <div class="navbar-item">
-                                        <a class="navbar-item" href="#my-work">
-                                            My Work
-                                        </a>
-                                    </div>
-                                    <div class="navbar-item">
-                                        <a class="navbar-item" href="#contact">
-                                            Contact
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                        {/* <!-- End Mobile Nav --> */}
-                        {/* <!-- Begin Hero Content--> */}
-                        <div class="hero-body">
-                            <div class="container has-text-centered">
-                                <h1 class="subtitle">Hey there, I'm</h1>
-                                <h2 class="title">Ashley</h2>
-                                <h1 class="subtitle profession">A UI/UX Designer</h1>
-                            </div>
-                        </div>
-                        {/* <!-- End Hero Content--> */}
-                        {/* <!-- Begin Hero Menu --> */}
-                        <div class="hero-foot ">
-                            <div class="hero-foot--wrapper">
-                                <div class="columns">
-                                    <div class="column is-12 hero-menu-desktop has-text-centered">
-                                        <ul>
-                                            <li class="is-active">
-                                                <a href="#home">Home</a>
-                                            </li>
-                                            <li>
-                                                <a href="#about-me">About Me</a>
-                                            </li>
-                                            <li>
-                                                <a href="#services">Services</a>
-                                            </li>
-                                            <li>
-                                                <a href="#skills">Skills</a>
-                                            </li>
-                                            <li>
-                                                <a href="#my-work">My Work</a>
-                                            </li>
-                                            <li>
-                                                <a href="#contact">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                    <div id="navbarExampleTransparentExample" class="navbar-menu">
+                        <div class="navbar-start is-link">
+                            <a class="navbar-item" href="https://github.com/BulmaTemplates/bulma-templates">
+                                Home
+                            </a>
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link" href="/documentation/overview/start/">
+                                    Docs
+                                </a>
+                                <div class="navbar-dropdown is-boxed">
+                                    <a class="navbar-item" href="admin.html">
+                                        Admin
+                                    </a>
+                                    <a class="navbar-item" href="forum.html">
+                                        Forum
+                                    </a>
+                                    <a class="navbar-item" href="cover.html">
+                                        Cover
+                                    </a>
+                                    <a class="navbar-item" href="cards.html">
+                                        Cards
+                                    </a>
+                                    <a class="navbar-item" href="blog.html">
+                                        Blog
+                                    </a>
+                                    <hr class="navbar-divider" />
+                                    <a class="navbar-item" href="search.html">
+                                        Search
+                                    </a>
+                                    <a class="navbar-item is-active" href="kanban.html">
+                                        Kanban
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        {/* <!-- End Hero Menu --> */}
-                    </section>
-                    {/* <!-- End Hero --> */}
-                </div>
-                {/* <!-- End Header --> */}
-
-                {/* <!-- Begin Main Content --> */}
-                <div class="main-content">
-                    {/* <!-- Begin About Me Section --> */}
-                    <div class="section-light about-me" id="about-me">
-                        <div class="container">
-                            <div class="column is-12 about-me">
-                                <h1 class="title has-text-centered section-title">About Me</h1>
-                            </div>
-                            <div class="columns is-multiline">
-                                <div
-                                    class="column is-6 has-vertically-aligned-content"
-                                    data-aos="fade-right"
-                                >
-                                    <p class="is-larger">
-                                        &emsp;&emsp;<strong
-                                        >Showcase is a modern, beautiful personal website template to
-                                            showcase who you are, as well as projects you've worked on in
-                                            the past.</strong
-                                        >
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="#" target="_blank" href="https://twitter.com/intent/tweet?text=get free bulma templates:;url=https://github.com/BulmaTemplates/bulma-templates">
+                                            <span class="icon">
+                                                <i class="fab fa-twitter"></i>
+                                            </span>
+                                            <span>
+                                                Tweet
+                                            </span>
+                                        </a>
                                     </p>
-                                    <br />
-                                    <p>
-                                        Showcase was built from the ground up with Bulma to be fast and
-                                        responsive out of the box with all source files well documented
-                                        for easy to customization. The Showcase template gives you a
-                                        personal space to share what you are all about as a creative
-                                        designer, developer, photographer, and more!
+                                    <p class="control">
+                                        <a class="button is-primary" href="https://github.com/BulmaTemplates/bulma-templates">
+                                            <span class="icon">
+                                                <i class="fas fa-download"></i>
+                                            </span>
+                                            <span>Download</span>
+                                        </a>
                                     </p>
-                                    <br />
-                                    <div class="is-divider"></div>
-                                    <div class="columns about-links">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <section class="hero is-info">
+                    <div class="hero-body">
+                        <div class="container">
+                            <h1 class="title">
+                                Tabs
+                            </h1>
+                            <h2 class="subtitle">
+                                example
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="tabs is-boxed is-centered main-menu" id="nav">
+                        <ul>
+                            <li data-target="pane-1" id="1">
+                                <a>
+                                    <span class="icon is-small"><i class="fa fa-image"></i></span>
+                                    <span>Pictures</span>
+                                </a>
+                            </li>
+                            <li data-target="pane-2" id="2" class="is-active">
+                                <a>
+                                    <span class="icon is-small"><i class="fab fa-empire"></i></span>
+                                    <span>Article</span>
+                                </a>
+                            </li>
+                            <li data-target="pane-3" id="3">
+                                <a>
+                                    <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+                                    <span>Team</span>
+                                </a>
+                            </li>
+                            <li data-target="pane-4" id="4">
+                                <a>
+                                    <span class="icon is-small"><i class="fa fa-film"></i></span>
+                                    <span>Video</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane" id="pane-1">
+                            <figure>
+                                <img src="https://source.unsplash.com/0_xMuEbpFAQ/400x400" alt="💯" class="cent" />
+                            </figure>
+                            <figure>
+                                <img src="https://source.unsplash.com/wPMvPMD9KBI/800x600" alt="💯" class="cent" />
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="pane-3">
+                            <div class="columns">
+                                <div class="container">
+                                    <div class="columns">
                                         <div class="column">
-                                            <p class="heading">
-                                                <strong>Give me a ring</strong>
-                                            </p>
-                                            <p class="subheading">
-                                                123-456-7890
-                                            </p>
+                                            <article class="media">
+                                                <div class="media-left">
+                                                    <i class="fab fa-github-square fa-4x"></i>
+                                                </div>
+                                                <div class="media-content">
+                                                    <div class="content">
+                                                        <p>
+                                                            <strong>Dominic Ipsum</strong>
+                                                            <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="media">
+                                                <div class="media-left">
+                                                    <i class="fab fa-empire fa-4x"></i>
+                                                </div>
+                                                <div class="media-content">
+                                                    <div class="content">
+                                                        <p>
+                                                            <strong>Cassie Ipsum</strong>
+                                                            <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </article>
                                         </div>
                                         <div class="column">
-                                            <p class="heading">
-                                                <strong>Email Me</strong>
-                                            </p>
-                                            <p class="subheading">
-                                                hello@example.com
-                                            </p>
-                                        </div>
-                                        <div class="column">
-                                            <p class="heading">
-                                                <strong>View my portfolio</strong>
-                                            </p>
-                                            <p class="subheading">
-                                                example.com
-                                            </p>
+                                            <article class="media">
+                                                <div class="media-left">
+                                                    <i class="fab fa-ravelry fa-4x"></i>
+                                                </div>
+                                                <div class="media-content">
+                                                    <div class="content">
+                                                        <p>
+                                                            <strong>Avery Ipsum</strong>
+                                                            <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="media">
+                                                <div class="media-left">
+                                                    <i class="fab fa-github-alt fa-4x"></i>
+                                                </div>
+                                                <div class="media-content">
+                                                    <div class="content">
+                                                        <p>
+                                                            <strong>io Ipsum</strong>
+                                                            <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis. ╳
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </article>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="column is-6 right-image " data-aos="fade-left">
-                                    <img
-                                        class="is-rounded"
-                                        src="https://picsum.photos/id/366/600/375"
-                                        alt=""
-                                    />
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="pane-4">
+                            <div class="columns is-centered">
+                                <div class="column is-three-quarters">
+                                    <div class="embed-container image">
+                                        <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {/* <!-- End About Me Content --> */}
-                    <div class="section-dark resume">
-                        <div class="container">
-                            <div
-                                class="columns is-multiline"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <div class="column is-12 about-me">
-                                    <h1 class="title has-text-centered section-title">
-                                        View My Resume
-                                    </h1>
-                                </div>
-                                <div class="column is-10 has-text-centered is-offset-1">
-                                    <h2 class="subtitle">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et doloremagna aliqua
-                                    </h2>
-                                    <form action="example.docs">
-                                        <button class="button">
-                                            Download Resume&emsp;<i class="fad fa-download fa-lg"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <!-- Begin Services Content --> */}
-                    <div class="section-color services" id="services">
-                        <div class="container">
-                            <div class="columns is-multiline">
-                                <div
-                                    class="column is-12 about-me"
-                                    data-aos="fade-in"
-                                    data-aos-easing="linear"
-                                >
-                                    <h1 class="title has-text-centered section-title">Services</h1>
+                        <div class="tab-pane is-active" id="pane-2">
+                            <div class="content">
+                                <h1>Hello World</h1>
+                                <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+                                <h2>Second level</h2>
+                                <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+                                <ul>
+                                    <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                                    <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                                    <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                                    <li>Ut non enim metus.</li>
+                                </ul>
 
-                                    <h2 class="subtitle">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                    </h2>
-                                    <br />
-                                </div>
-                                <div class="columns is-12">
-                                    <div
-                                        class="column is-4 has-text-centered"
-                                        data-aos="fade-in"
-                                        data-aos-easing="linear"
-                                    >
-                                        <i class="fad fa-meteor fa-3x"></i>
-                                        <hr />
-                                        <h2>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                        </h2>
-                                    </div>
-                                    <div
-                                        class="column is-4 has-text-centered"
-                                        data-aos="fade-in"
-                                        data-aos-easing="linear"
-                                    >
-                                        <i class="fas fa-paint-brush fa-3x"></i>
-                                        <hr />
-                                        <h2>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                        </h2>
-                                    </div>
-                                    <div
-                                        class="column is-4 has-text-centered"
-                                        data-aos="fade-in"
-                                        data-aos-easing="linear"
-                                    >
-                                        <i class="fas fa-rocket fa-3x"></i>
-                                        <hr />
-                                        <h2>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                        </h2>
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="columns is-12">
-                                    <div
-                                        class="column is-4 has-text-centered"
-                                        data-aos="fade-in"
-                                        data-aos-easing="linear"
-                                    >
-                                        <i class="fas fa-upload fa-3x"></i>
-                                        <hr />
-                                        <h2>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                        </h2>
-                                    </div>
-                                    <div
-                                        class="column is-4 has-text-centered"
-                                        data-aos="fade-in"
-                                        data-aos-easing="linear"
-                                    >
-                                        <i class="fas fa-bus fa-3x"></i>
-                                        <hr />
-                                        <h2>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                        </h2>
-                                    </div>
-                                    <div
-                                        class="column is-4 has-text-centered"
-                                        data-aos="fade-in"
-                                        data-aos-easing="linear"
-                                    >
-                                        <i class="fas fa-code fa-3x"></i>
-                                        <hr />
-                                        <h2>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                        </h2>
-                                    </div>
-                                </div>
+                                <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
                             </div>
                         </div>
                     </div>
-                    {/* <!-- End Services Content --> */}
-                    {/* <!-- Begin Skills Content --> */}
-                    <div class="section-light skills" id="skills">
-                        <div class="container">
-                            <div class="columns is-multiline">
-                                <div class="column is-12 about-me">
-                                    <h1 class="title has-text-centered section-title">Skills</h1>
-                                </div>
-                                <div
-                                    class="column is-6"
-                                    data-aos="fade-in"
-                                    data-aos-easing="linear"
-                                >
-                                    <h1>Adobe Experience Design</h1>
-                                    <progress class="progress" value="70" max="100">30%</progress>
-                                    <h1>Adobe After Effects</h1>
-                                    <progress class="progress" value="65" max="100">30%</progress>
-                                    <h1>Visual Studio Code</h1>
-                                    <progress class="progress" value="58" max="100">45%</progress>
-                                    <h1>Sketch</h1>
-                                    <progress class="progress" value="90" max="100">60%</progress>
-                                </div>
-                                <div
-                                    class="column is-6"
-                                    data-aos="fade-in"
-                                    data-aos-easing="linear"
-                                >
-                                    <h1>HTML</h1>
-                                    <progress class="progress" value="85" max="100">30%</progress>
-                                    <h1>CSS</h1>
-                                    <progress class="progress" value="95" max="100">30%</progress>
-                                    <h1>VueJS</h1>
-                                    <progress class="progress" value="70" max="100">45%</progress>
-                                    <h1>React</h1>
-                                    <progress class="progress" value="60" max="100">60%</progress>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <!-- End Skills Content --> */}
-                    {/* <!-- Begin Work Content --> */}
-                    <div class="section-dark my-work" id="my-work">
-                        <div class="container">
-                            <div
-                                class="columns is-multiline"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <div class="column is-12">
-                                    <h1 class="title has-text-centered section-title">My Work</h1>
-                                </div>
-                                <div class="column is-3">
-                                    <a href="#">
-                                        <figure
-                                            class="image is-2by1 work-item"
-                                            style="background-image: url('https://picsum.photos/320/180?image=0');"
-                                        ></figure>
-                                    </a>
-                                </div>
-                                <div class="column is-3">
-                                    <a href="#">
-                                        <figure
-                                            class="image is-2by1 work-item"
-                                            style="background-image: url('https://picsum.photos/320/180?image=10');"
-                                        ></figure>
-                                    </a>
-                                </div>
-                                <div class="column is-3">
-                                    <a href="#">
-                                        <figure
-                                            class="image is-2by1 work-item"
-                                            style="background-image: url('https://picsum.photos/320/180?image=20');"
-                                        ></figure>
-                                    </a>
-                                </div>
-                                <div class="column is-3">
-                                    <a href="#">
-                                        <figure
-                                            class="image is-2by1 work-item"
-                                            style="background-image: url('https://picsum.photos/320/180?image=30');"
-                                        ></figure>
-                                    </a>
-                                </div>
-                                <div class="column is-3">
-                                    <a href="#">
-                                        <figure
-                                            class="image is-2by1 work-item"
-                                            style="background-image: url('https://picsum.photos/320/180?image=40');"
-                                        ></figure>
-                                    </a>
-                                </div>
-                                <div class="column is-3">
-                                    <a href="#">
-                                        <figure
-                                            class="image is-2by1 work-item"
-                                            style="background-image: url('https://picsum.photos/320/180?image=50');"
-                                        ></figure>
-                                    </a>
-                                </div>
-                                <div class="column is-3">
-                                    <a href="#">
-                                        <figure
-                                            class="image is-2by1 work-item"
-                                            style="background-image: url('https://picsum.photos/320/180?image=60');"
-                                        ></figure>
-                                    </a>
-                                </div>
-                                <div class="column is-3">
-                                    <a href="#">
-                                        <figure
-                                            class="image is-2by1 work-item"
-                                            style="background-image: url('https://picsum.photos/320/180?image=70');"
-                                        ></figure>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <!-- End Work Content --> */}
-                    {/* <!-- Begin Contact Content --> */}
-                    <div class="section-light contact" id="contact">
-                        <div class="container">
-                            <div
-                                class="columns is-multiline"
-                                data-aos="fade-in-up"
-                                data-aos-easing="linear"
-                            >
-                                <div class="column is-12 about-me">
-                                    <h1 class="title has-text-centered section-title">
-                                        Get in touch
-                                    </h1>
-                                </div>
-                                <div class="column is-8 is-offset-2">
-                                    <form
-                                        action="https://formspree.io/email@example.com"
-                                        method="POST"
-                                    >
-                                        <div class="field">
-                                            <label class="label">Name</label>
-                                            <div class="control has-icons-left">
-                                                <input
-                                                    class="input"
-                                                    type="text"
-                                                    placeholder="Ex. Jane Smith"
-                                                    name="Name"
-                                                />
-                                                <span class="icon is-small is-left">
-                                                    <i class="fas fa-user"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="field">
-                                            <label class="label">Email</label>
-                                            <div class="control has-icons-left">
-                                                <input
-                                                    class="input"
-                                                    type="email"
-                                                    placeholder="Ex. hello@arctheme.com"
-                                                    name="Email"
-                                                />
-                                                <span class="icon is-small is-left">
-                                                    <i class="fas fa-envelope"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="field">
-                                            <label class="label">Message</label>
-                                            <div class="control">
-                                                <textarea
-                                                    class="textarea"
-                                                    placeholder="Textarea"
-                                                    name="Message"
-                                                ></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="field">
-                                            <div class="control ">
-                                                <button class="button submit-button">
-                                                    Submit&nbsp;&nbsp;
-                                                    <i class="fas fa-paper-plane"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <!-- End Contact Content --> */}
-                </div>
-                {/* <!-- End Main Content --> */}
-
-                {/* <!-- Begin Footer --> */}
-                <div class="footer">
-                    <p>
-                        <strong class="white">Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
-                        The source code is licensed
-                        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
-                        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-                    </p>
-                </div>
-                {/* <!-- End Footer --> */}
+                </section>
             </div>
         );
     }
