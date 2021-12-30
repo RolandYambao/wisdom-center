@@ -16,7 +16,7 @@ class QuoteContainer extends Component {
             .then((response) => {
                 console.log(response.data);
                 this.setState({
-                    data: response.data.seasonArray,
+                    data: response.data.quoteArray,
                 });
             })
             .catch((error) => {
