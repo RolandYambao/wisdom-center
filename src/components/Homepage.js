@@ -93,25 +93,25 @@ class Homepage extends Component {
                             <li data-target="pane-1" id="1">
                                 <a>
                                     <span class="icon is-small"><i class="fa fa-image"></i></span>
-                                    <span>Pictures</span>
+                                    <span>About</span>
                                 </a>
                             </li>
-                            <li data-target="pane-2" id="2" class="is-active">
+                            <li data-target="pane-2" id="2">
                                 <a>
                                     <span class="icon is-small"><i class="fab fa-empire"></i></span>
-                                    <span>Article</span>
+                                    <span>Quotes</span>
                                 </a>
                             </li>
                             <li data-target="pane-3" id="3">
                                 <a>
                                     <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
-                                    <span>Team</span>
+                                    <span>Store</span>
                                 </a>
                             </li>
                             <li data-target="pane-4" id="4">
                                 <a>
                                     <span class="icon is-small"><i class="fa fa-film"></i></span>
-                                    <span>Video</span>
+                                    <span>Contact</span>
                                 </a>
                             </li>
                         </ul>
