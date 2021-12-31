@@ -34,6 +34,9 @@ class QuoteDisplay extends Component {
                             </div>
                         </div>
                     </div>
+                    <button id="reviewLinkButton">
+                        <a id="reviewLink" href="/quotes:id">Click Here to See Quote Reviews</a>
+                    </button>
                 </section>
             </div>
         );
@@ -49,7 +52,13 @@ class QuoteReviewDisplay extends Component {
                     <div className="container">
                         <QuoteReviewContainer />
                     </div>
+                    <br />
+                    <button id="reviewLinkButton">
+                        <a id="reviewLink" href="/quotes">Return to Quotes</a>
+                    </button>
                 </section>
+                <br />
+                <br />
             </footer>
         );
     }

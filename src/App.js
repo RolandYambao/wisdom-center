@@ -22,16 +22,8 @@ class App extends Component {
           <Routes>
             <Route exact path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
-
-            {/* <Route path="/quotes" render={props =>
-              <div>
-                <QuoteDisplay />
-                <QuoteReviewDisplay />
-              </div>
-            } /> */}
             <Route path="/quotes" element={<QuoteDisplay />} />
-            <Route path="/quotes" element={<QuoteReviewDisplay />} />
-
+            <Route path="/quotes:id" element={<QuoteReviewDisplay />} />
             <Route path="/store" element={<Store />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

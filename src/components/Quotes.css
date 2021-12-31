@@ -5,7 +5,7 @@ html {
 
 pre,
 .message {
-  max-width: 960px;
+  max-width: 1300px;
 }
 
 li {margin: 10px}
@@ -55,5 +55,21 @@ background: linear-gradient(to top right, #524ad0 10%, #D099FA);
 .footer {background-color: white;}
 
 #topQuotes, #moreToCome {
+  color: white;
+}
+
+.box {
+  margin-top: 10px;
+}
+
+#reviewLinkButton {
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 40px;
+  background-color: lightseagreen;
+}
+
+#reviewLink {
   color: white;
 }
