@@ -88,7 +88,7 @@ class About extends Component {
                 </section>
                 <footer className="footer">
                     <div className="content has-text-centered">
-                        <p>
+                        <p id="wisdom">
                             <strong>Wisdom Center</strong> See our Wisdom
                         </p>
                     </div>

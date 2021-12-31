@@ -31,7 +31,7 @@ class Quotes extends Component {
                             <div className="column">
                                 <div className="content is-medium">
                                     <h3 id="topQuotes" className="title is-3">Top Quotes</h3>
-                                    <div className="box" key={0}>
+                                    <div className="box">
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -43,7 +43,7 @@ class Quotes extends Component {
                                         </article>
                                         <pre><code className="language-javascript">{this.props.quote}</code></pre>
                                     </div>
-                                    <div className="box" key={1}>
+                                    <div className="box">
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -55,7 +55,7 @@ class Quotes extends Component {
                                         </article>
                                         <pre><code className="language-javascript">{this.props.quote}</code></pre>
                                     </div>
-                                    <div className="box" key={2}>
+                                    <div className="box">
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -67,7 +67,7 @@ class Quotes extends Component {
                                         </article>
                                         <pre><code className="language-javascript">{this.props.quote}</code></pre>
                                     </div>
-                                    <div className="box" key={3}>
+                                    <div className="box">
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -79,7 +79,7 @@ class Quotes extends Component {
                                         </article>
                                         <pre><code className="language-javascript">{this.props.quote}</code></pre>
                                     </div>
-                                    <div className="box" key={4}>
+                                    <div className="box">
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -121,7 +121,7 @@ class QuoteReviews extends Component {
                                                 <i className="has-text-warning fas fa-columns fa-lg"></i>
                                             </span>
                                         </figure>
-                                        <div className="media-content" key={0}>
+                                        <div className="media-content">
                                             <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
@@ -139,7 +139,7 @@ class QuoteReviews extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={1}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}
@@ -156,7 +156,7 @@ class QuoteReviews extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={2}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}
@@ -173,7 +173,7 @@ class QuoteReviews extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={3}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}
@@ -190,7 +190,7 @@ class QuoteReviews extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={4}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}
@@ -207,7 +207,7 @@ class QuoteReviews extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={5}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}

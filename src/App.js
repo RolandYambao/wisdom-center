@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -23,16 +23,18 @@ class App extends Component {
             <Route exact path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
 
-            {/* <Route path="/quotes">
-              <Quotes />
-              <QuoteReviews />
-            </Route> */}
+            <Route path="/quotes" render={props =>
+              <div>
+                <Quotes />
+                <QuoteReviews />
+              </div>
+            } />
 
             <Route path="/store" element={<Store />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-      </Router>
+      </Router >
     );
   }
 }

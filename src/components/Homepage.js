@@ -57,6 +57,13 @@ class Homepage extends Component {
                         </div>
                     </div>
                 </section >
+                <footer className="footer">
+                    <div className="content has-text-centered">
+                        <p id="wisdom">
+                            <strong>Wisdom Center</strong> See our Wisdom
+                        </p>
+                    </div>
+                </footer>
             </div >
         );
     }
