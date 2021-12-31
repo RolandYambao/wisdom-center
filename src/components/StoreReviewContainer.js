@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Store from './Store';
+import StoreReviews from './StoreReviews';
 
 class StoreReviewContainer extends Component {
 
@@ -26,7 +26,7 @@ class StoreReviewContainer extends Component {
 
     displayStoreReviews() {
         const display = this.state.data.map((a, idx) => {
-            return <Store
+            return <StoreReviews
                 key={idx}
                 name={a.name}
                 review={a.review}

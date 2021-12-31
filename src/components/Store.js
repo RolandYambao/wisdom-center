@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Store.css';
+import StoreReviewContainer from './StoreReviewContainer';
 
 class Store extends Component {
 
@@ -83,110 +84,7 @@ class Store extends Component {
                 <footer>
                     <section className="section">
                         <div className="container">
-                            <div className="columns is-multiline">
-                                <div className="column is-one-third">
-                                    <article className="notification media has-background-white">
-                                        <figure className="media-left">
-                                            <span className="icon">
-                                                <i className="has-text-warning fa fa-columns fa-lg"></i>
-                                            </span>
-                                        </figure>
-                                        <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">{this.props.name}</h1>
-                                                <p className="is-size-5 subtitle">
-                                                    {this.props.review}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div className="column is-one-third">
-                                    <article className="notification has-background-white media">
-                                        <figure className="media-left">
-                                            <span className="icon has-text-info">
-                                                <i className="fa fa-lg fa-wpforms"></i>
-                                            </span>
-                                        </figure>
-                                        <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">{this.props.name}</h1>
-                                                <p className="is-size-5 subtitle">
-                                                    {this.props.review}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div className="column is-one-third">
-                                    <article className="notification has-background-white media">
-                                        <figure className="media-left">
-                                            <span className="icon has-text-danger">
-                                                <i className="fa fa-lg fa-cubes"></i>
-                                            </span>
-                                        </figure>
-                                        <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">{this.props.name}</h1>
-                                                <p className="is-size-5 subtitle">
-                                                    {this.props.review}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div className="column is-one-third">
-                                    <article className="notification has-background-white media">
-                                        <figure className="media-left">
-                                            <span className="icon has-text-grey">
-                                                <i className="fa fa-lg fa-cogs"></i>
-                                            </span>
-                                        </figure>
-                                        <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">{this.props.name}</h1>
-                                                <p className="is-size-5 subtitle">
-                                                    {this.props.review}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div className="column is-one-third">
-                                    <article className="notification has-background-white media">
-                                        <figure className="media-left">
-                                            <span className="icon has-text-primary">
-                                                <i className="fa fa-lg fa-superpowers"></i>
-                                            </span>
-                                        </figure>
-                                        <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">{this.props.name}</h1>
-                                                <p className="is-size-5 subtitle">
-                                                    {this.props.review}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div className="column is-one-third">
-                                    <article className="notification has-background-white media">
-                                        <figure className="media-left">
-                                            <span className="icon has-text-danger">
-                                                <i className="fa fa-lg fa-cube"></i>
-                                            </span>
-                                        </figure>
-                                        <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">{this.props.name}</h1>
-                                                <p className="is-size-5 subtitle">
-                                                    {this.props.review}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
+                            <StoreReviewContainer />
                         </div>
                     </section>
                 </footer>
