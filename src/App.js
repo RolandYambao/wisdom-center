@@ -11,8 +11,8 @@ import {
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 import { Quotes, QuoteReviews } from "./components/Quotes";
-import Store from "./components/Store";
 import Contact from "./components/Contact";
+import StoreReviewContainer from "./components/StoreReviewContainer";
 
 class App extends Component {
   render() {
@@ -28,7 +28,7 @@ class App extends Component {
               <QuoteReviews />
             </Route> */}
 
-            <Route path="/store" element={<Store />} />
+            <Route path="/store" element={<StoreReviewContainer />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
