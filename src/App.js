@@ -10,7 +10,7 @@ import {
 // Components
 import Homepage from "./components/Homepage";
 import About from "./components/About";
-import Quotes from "./components/Quotes";
+import { Quotes, QuoteReviews } from "./components/Quotes";
 import Store from "./components/Store";
 import Contact from "./components/Contact";
 
@@ -22,7 +22,12 @@ class App extends Component {
           <Routes>
             <Route exact path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
-            <Route path="/quotes" element={<Quotes />} />
+
+            {/* <Route path="/quotes">
+              <Quotes />
+              <QuoteReviews />
+            </Route> */}
+
             <Route path="/store" element={<Store />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

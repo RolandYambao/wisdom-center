@@ -29,9 +29,9 @@ class Quotes extends Component {
                     <div className="container">
                         <div className="columns">
                             <div className="column">
-                            <div className="content is-medium">
+                                <div className="content is-medium">
                                     <h3 id="topQuotes" className="title is-3">Top Quotes</h3>
-                                    <div className="box">
+                                    <div className="box" key={0}>
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -43,7 +43,7 @@ class Quotes extends Component {
                                         </article>
                                         <pre><code className="language-javascript">{this.props.quote}</code></pre>
                                     </div>
-                                    <div className="box">
+                                    <div className="box" key={1}>
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -55,7 +55,7 @@ class Quotes extends Component {
                                         </article>
                                         <pre><code className="language-javascript">{this.props.quote}</code></pre>
                                     </div>
-                                    <div className="box">
+                                    <div className="box" key={2}>
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -67,7 +67,7 @@ class Quotes extends Component {
                                         </article>
                                         <pre><code className="language-javascript">{this.props.quote}</code></pre>
                                     </div>
-                                    <div className="box">
+                                    <div className="box" key={3}>
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -79,7 +79,7 @@ class Quotes extends Component {
                                         </article>
                                         <pre><code className="language-javascript">{this.props.quote}</code></pre>
                                     </div>
-                                    <div className="box">
+                                    <div className="box" key={4}>
                                         <h4 id="const" className="title is-3">{this.props.name}</h4>
                                         <article className="message is-primary">
                                             <span className="icon has-text-primary">
@@ -96,6 +96,20 @@ class Quotes extends Component {
                         </div>
                     </div>
                 </section>
+            </div>
+        );
+    }
+}
+
+class QuoteReviews extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div>
                 <footer className="footer">
                     <section className="section">
                         <div className="container">
@@ -107,11 +121,11 @@ class Quotes extends Component {
                                                 <i className="has-text-warning fas fa-columns fa-lg"></i>
                                             </span>
                                         </figure>
-                                        <div className="media-content">
+                                        <div className="media-content" key={0}>
                                             <div className="content">
-                                                <h1 className="title is-size-4">John</h1>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "I have been enlightened by great masters."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -125,10 +139,10 @@ class Quotes extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">Bob</h1>
+                                            <div className="content" key={1}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "I have seen truth beyond my understanding."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -142,10 +156,10 @@ class Quotes extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">Jenny</h1>
+                                            <div className="content" key={2}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "My life has been completely transformed."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -159,10 +173,10 @@ class Quotes extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">Unknown</h1>
+                                            <div className="content" key={3}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    $!Q^&#^#!%#!@#01001000011001010110110001110000
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -176,10 +190,10 @@ class Quotes extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">$!@#@#*</h1>
+                                            <div className="content" key={4}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                01001011011010010110110001101100001000000110110101100101$!@%#%Fq
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -193,10 +207,10 @@ class Quotes extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">Rob</h1>
+                                            <div className="content" key={5}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "I am estatic for the greatness I am witnessing."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -207,9 +221,12 @@ class Quotes extends Component {
                     </section>
                     <hr />
                 </footer>
-            </div>
+            </div >
         );
     }
 }
 
-export default Quotes;
+export {
+    Quotes,
+    QuoteReviews,
+}

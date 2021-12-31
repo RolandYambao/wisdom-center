@@ -86,11 +86,11 @@ class Store extends Component {
                                                 <i className="has-text-warning fa fa-columns fa-lg"></i>
                                             </span>
                                         </figure>
-                                        <div className="media-content">
+                                        <div className="media-content" key={0}>
                                             <div className="content">
-                                                <h1 className="title is-size-4">Review #1</h1>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "The Greatest thing I have ever bought."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -104,10 +104,10 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">Review #2</h1>
+                                            <div className="content" key={1}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "I am awestruck by this wisdom."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -121,10 +121,10 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">Review #3</h1>
+                                            <div className="content" key={2}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "My life has never been better."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -138,10 +138,10 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">Review #4</h1>
+                                            <div className="content" key={3}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "Someone please help me."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -155,10 +155,10 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">Review #5</h1>
+                                            <div className="content" key={4}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "Get me out of here, someone help."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>
@@ -172,10 +172,10 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content">
-                                                <h1 className="title is-size-4">Review #6</h1>
+                                            <div className="content" key={5}>
+                                                <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
-                                                    "The greates tuse of my hard earned money."
+                                                    {this.props.review}
                                                 </p>
                                             </div>
                                         </div>

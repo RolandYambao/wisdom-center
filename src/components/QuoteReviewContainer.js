@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Quotes from './Quotes';
+import QuoteReviews from './Quotes';
 
-class QuoteContainer extends Component {
+class QuoteReviewContainer extends Component {
 
     constructor(props) {
         super(props);
@@ -12,11 +12,11 @@ class QuoteContainer extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:3000/quotes')
+        axios.get('http://localhost:3000/quoteReviews')
             .then((response) => {
                 console.log(response.data);
                 this.setState({
-                    data: response.data.quoteArray,
+                    data: response.data.quoteReviewArray,
                 });
             })
             .catch((error) => {
@@ -24,13 +24,12 @@ class QuoteContainer extends Component {
             })
     }
 
-    displayQuotes() {
+    displayQuoteReviews() {
         const display = this.state.data.map((a, idx) => {
-            return <Quotes
+            return <QuoteReviews
                 key={idx}
                 name={a.name}
-                origin={a.origin}
-                quote={a.quote}
+                review={a.review}
             />
         });
         console.log(this.state.data);
@@ -40,10 +39,10 @@ class QuoteContainer extends Component {
     render() {
         return (
             <div>
-                {this.displayQuotes()}
+                {this.displayQuoteReviews()}
             </div>
         );
     }
 }
 
-export default QuoteContainer;
+export default QuoteReviewContainer;
