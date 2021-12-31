@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import './Store.css';
 
 class Store extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <div>
@@ -86,7 +91,7 @@ class Store extends Component {
                                                 <i className="has-text-warning fa fa-columns fa-lg"></i>
                                             </span>
                                         </figure>
-                                        <div className="media-content" key={0}>
+                                        <div className="media-content">
                                             <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
@@ -104,7 +109,7 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={1}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}
@@ -121,7 +126,7 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={2}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}
@@ -138,7 +143,7 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={3}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}
@@ -155,7 +160,7 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={4}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}
@@ -172,7 +177,7 @@ class Store extends Component {
                                             </span>
                                         </figure>
                                         <div className="media-content">
-                                            <div className="content" key={5}>
+                                            <div className="content">
                                                 <h1 className="title is-size-4">{this.props.name}</h1>
                                                 <p className="is-size-5 subtitle">
                                                     {this.props.review}
