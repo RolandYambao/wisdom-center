@@ -27,25 +27,21 @@ class QuoteReviews extends Component {
 
     render() {
         return (
-            <div>
-                <div className="column is-one-third">
-                    <article className="notification media has-background-white">
-                        <figure className="media-left">
-                            <span className="icon">
-                                <i className="has-text-warning fas fa-columns fa-lg"></i>
-                            </span>
-                        </figure>
-                        <div className="media-content">
-                            <div className="content">
-                                <h1 className="title is-size-4">{this.props.name}</h1>
-                                <p className="is-size-5 subtitle">
-                                    {this.props.review}
-                                </p>
-                            </div>
-                        </div>
-                    </article>
+            <article className="notification media has-background-white">
+                <figure className="media-left">
+                    <span className="icon">
+                        <i className="has-text-warning fas fa-columns fa-lg"></i>
+                    </span>
+                </figure>
+                <div className="media-content">
+                    <div className="content">
+                        <h1 className="title is-size-4">{this.props.name}</h1>
+                        <p className="is-size-5 subtitle">
+                            {this.props.review}
+                        </p>
+                    </div>
                 </div>
-            </div >
+            </article>
         );
     }
 }

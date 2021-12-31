@@ -44,18 +44,13 @@ class QuoteReviewDisplay extends Component {
 
     render() {
         return (
-            <div>
-                <footer className="footer">
-                    <section className="section">
-                        <div className="container">
-                            <div className="columns is-multiline">
-                                <QuoteReviewContainer />
-                            </div>
-                        </div>
-                    </section>
-                    <hr />
-                </footer>
-            </div >
+            <footer>
+                <section className="section">
+                    <div className="container">
+                        <QuoteReviewContainer />
+                    </div>
+                </section>
+            </footer>
         );
     }
 }
