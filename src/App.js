@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -10,7 +10,7 @@ import {
 // Components
 import Homepage from "./components/Homepage";
 import About from "./components/About";
-import { Quotes, QuoteReviews } from "./components/Quotes";
+import { QuoteDisplay, QuoteReviewDisplay } from "./components/QuoteDisplay";
 import Contact from "./components/Contact";
 import Store from "./components/Store";
 
@@ -25,8 +25,8 @@ class App extends Component {
 
             <Route path="/quotes" render={props =>
               <div>
-                <Quotes />
-                <QuoteReviews />
+                <QuoteDisplay />
+                <QuoteReviewDisplay />
               </div>
             } />
 

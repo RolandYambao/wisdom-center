@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Quotes from './Quotes';
+import { Quotes } from './Quotes';
 
 class QuoteContainer extends Component {
 

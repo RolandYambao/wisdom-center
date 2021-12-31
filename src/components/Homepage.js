@@ -59,6 +59,9 @@ class Homepage extends Component {
                 </section >
                 <footer className="footer">
                     <div className="content has-text-centered">
+                    <br />
+                    <br />
+                    <br />
                         <p id="wisdom">
                             <strong>Wisdom Center</strong> See our Wisdom
                         </p>

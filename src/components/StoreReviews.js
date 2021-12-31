@@ -3,10 +3,6 @@ import './Store.css';
 
 class StoreReviews extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <article className="notification media has-background-white">
